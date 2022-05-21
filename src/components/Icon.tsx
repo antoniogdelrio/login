@@ -1,4 +1,4 @@
-import IconImage from '../../public/icon.png'
+import IconImage from '/icon.png'
 
 function Icon () {
     return <img src={IconImage} />
