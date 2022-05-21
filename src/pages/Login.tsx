@@ -5,12 +5,10 @@ import Icon from "../components/Icon"
 import Link from "../components/Link"
 import TextField from "../components/TextField"
 import Typography from "../components/Typography"
-import { GeneralContext } from "../contexts/GeneralContext"
-import LoginContextProvider, { LoginContext } from "../contexts/LoginContext"
+import { LoginContext } from "../contexts/LoginContext"
 
 function Login () {
     const { user, setUser, doLogin } = useContext(LoginContext)
-    const { setLoading } = useContext(GeneralContext)
     const [rememberMe, setRememberMe] = useState(false)
 
     return <main>
